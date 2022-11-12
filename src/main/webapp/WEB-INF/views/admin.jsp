@@ -7,55 +7,7 @@
         <meta charset="utf-8">
         <title>Admin</title>
 
-        <style>
-            table, th, td {
-                font-family: Lato-Regular;
-                border: 1px solid white;
-                border-collapse: collapse;
-            }
-
-            table.iksweb{
-                width: 100%;
-                border-collapse:collapse;
-                border-spacing:0;
-                height: auto;
-            }
-            table.iksweb,table.iksweb td, table.iksweb th {
-                border: 1px solid #595959;
-            }
-            table.iksweb td,table.iksweb th {
-                padding: 3px;
-                width: 30px;
-                height: 35px;
-            }
-            /*table.iksweb th {*/
-            /*    background: #ffffff;*/
-            /*    color: #fff;*/
-            /*    font-weight: normal;*/
-            /*}*/
-
-
-            thead {
-                background-color: #6c7ae0;
-                color: #fff;
-                font-style: italic;
-                font-size: 17px;
-                text-align: center;
-            }
-
-            tbody:nth-child(even) {
-                text-align: center;
-                background: rgba(255, 255, 255, 0.99);
-            }
-
-            tbody:nth-child(odd) {
-                text-align: center;
-                background: #ecebeb;
-            }
-
-
-        </style>
-
+        <style><%@include file="../css/main.css"%></style>
 
         <script>
             function deletePhone(id){

@@ -6,39 +6,8 @@
     <meta charset="utf-8">
     <title>Search</title>
 
-<%--    <style>--%>
-<%--        table, th, td {--%>
-<%--            border: 1px solid white;--%>
-<%--            border-collapse: collapse;--%>
-<%--        }--%>
-<%--        th, td {--%>
-<%--            background-color: #96D4D4;--%>
-<%--        }--%>
-
-<%--        table.iksweb{--%>
-<%--            width: 100%;--%>
-<%--            border-collapse:collapse;--%>
-<%--            border-spacing:0;--%>
-<%--            height: auto;--%>
-<%--        }--%>
-<%--        table.iksweb,table.iksweb td, table.iksweb th {--%>
-<%--            border: 1px solid #595959;--%>
-<%--        }--%>
-<%--        table.iksweb td,table.iksweb th {--%>
-<%--            padding: 3px;--%>
-<%--            width: 30px;--%>
-<%--            height: 35px;--%>
-<%--        }--%>
-<%--        table.iksweb th {--%>
-<%--            background: #347c99;--%>
-<%--            color: #fff;--%>
-<%--            font-weight: normal;--%>
-<%--        }--%>
-<%--    </style>--%>
-
     <style><%@include file="../css/main.css"%></style>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-<%--    <link href="https://getbootstrap.com/docs/4.0/examples/signin/signin.css" rel="stylesheet" crossorigin="anonymous"/>--%>
 
 </head>
 <body>
