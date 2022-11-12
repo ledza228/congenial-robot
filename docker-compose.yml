@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  postgres:
+    environment:
+      POSTGRES_PASSWORD: "postgres"
+      POSTGRES_DB: bitcup
+    image: postgres:latest
+
+
+  bitcup-back:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    working_dir: /home/app/
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
