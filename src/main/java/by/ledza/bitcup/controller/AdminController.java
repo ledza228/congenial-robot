@@ -6,13 +6,14 @@ import by.ledza.bitcup.dto.WorkerDTO;
 import by.ledza.bitcup.service.PhoneService;
 import by.ledza.bitcup.service.WorkerService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/admin/")
+@RequestMapping(value = "/api/admin/")
 @Secured({"ROLE_ADMIN"})
 public class AdminController {
 

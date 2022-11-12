@@ -17,6 +17,7 @@ async function putRequest(){
         method: 'PUT',
         body: JSON.stringify(phone),
         headers: {
+            'X-CSRF-TOKEN': '${_csrf.token}',
             'Content-Type': 'application/json'
         }
     }).then(r => {
@@ -147,10 +148,13 @@ async function createPhone(){
         method: 'POST',
         body: JSON.stringify(phone),
         headers: {
+            'X-CSRF-TOKEN': '${_csrf.token}',
             'Content-Type': 'application/json'
         }
     }).then(r => {
-        location.reload()
+        if (r.status === 200){
+            location.reload()
+        }
     }).catch(c => {
         alert("Error while creating!")
     })

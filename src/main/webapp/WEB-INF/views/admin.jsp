@@ -15,11 +15,20 @@
             function deletePhone(id){
                 fetch("/api/admin/phone/"+id, {
                     method: 'Delete',
+                    headers:{
+                        'X-CSRF-TOKEN': '${_csrf.token}'
+                    }
                 }).catch(e => {
                     console.log(e);
                     alert("Delete error")
                 }).then(c => {
-                    location.reload()
+                    if (c.status === 200){
+                        location.reload()
+                    }
+                    else {
+                        alert("Error")
+                        console.log(c);
+                    }
                 });
             }
         </script>
