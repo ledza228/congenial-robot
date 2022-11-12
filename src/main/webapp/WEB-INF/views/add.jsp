@@ -24,7 +24,7 @@
     <hr>
 
     <label for="number">Phone number</label>
-    <input type="text" class="form-control" id="number" aria-describedby="emailHelp" value=${phone.getNumber()}>
+    <input type="text" class="form-control" id="number" aria-describedby="emailHelp" value="">
     <br>
 
     <input type="checkbox" style="margin-left: 10px" class="form-check-input" id="isHidden">
