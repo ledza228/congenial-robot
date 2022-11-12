@@ -42,13 +42,13 @@
     <%@include file="include/header.jsp"%>
 
     <div class="p-3">
-    <h3>Admin panel</h3>
+    <h3 id="tabledesc">Admin panel</h3>
         <hr>
 
         <div>
         <a href="/admin/phone/" class="p-3"><button type="button" class="btn btn-success">Add phone</button></a>
         <div class="mainContainer p-3">
-        <table class="iksweb">
+        <table class="iksweb" aria-describedby="tabledesc">
             <thead>
             <tr>
                 <th>Номер</th>
@@ -125,11 +125,11 @@
 
                             <div style="text-align: center">
                                 <a href=${"/admin/phone/".concat(phone.getPhoneId())}>
-                                    <button class="btn btn-success btn-sm rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit"></i></button>
+                                    <button class="btn btn-success btn-sm rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Edit"><em class="fa fa-edit"></em></button>
                                 </a>
 
                             <button class="btn btn-danger btn-sm rounded-0" type="button" data-toggle="tooltip"
-                                    data-placement="top" title="Delete" onclick="deletePhone(${phone.getPhoneId()})"><i class="fa fa-trash"></i></button>
+                                    data-placement="top" title="Delete" onclick="deletePhone(${phone.getPhoneId()})"><em class="fa fa-trash"></em></button>
                             </div>
 
                             </td>

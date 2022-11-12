@@ -46,9 +46,9 @@
 
     <button class="btn btn-primary" onclick="putRequest()">Submit edit</button>
 
-        <div class="p-2">Владельцы номера:</div>
+        <div class="p-2" id="tabledesc">Владельцы номера:</div>
 
-    <table class="owners iksweb">
+    <table class="owners iksweb" aria-describedby="tabledesc">
         <tr class="example-owner">
             <th>ФИО</th>
             <th>Почта</th>
@@ -73,7 +73,7 @@
                 <td style="text-align: center; width: 50px;">
                     <button class="btn btn-danger btn-sm rounded-0" type="button" data-toggle="tooltip" data-placement="top"
                             title="Delete" onclick=${"deleteFromOwners(".concat(owner.getId()).concat(")")}>
-                        <i class="fa fa-trash"></i>
+                        <em class="fa fa-trash"></em>
                     </button>
                 </td>
             </tr>

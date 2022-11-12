@@ -18,7 +18,7 @@
 
     <div class="p-3">
 
-        <h3>Поиск</h3>
+        <h3 id="tabledesc">Поиск</h3>
         <hr>
         <div class="mainContainer p-3">
 
@@ -62,10 +62,10 @@
         </div>
 
         <input class="btn btn-primary" type="submit" value="Search">
-
     </form>
+    <br>
 
-    <table class="iksweb">
+    <table class="iksweb" aria-describedby="tabledesc">
         <thead>
         <tr>
             <th>Номер</th>

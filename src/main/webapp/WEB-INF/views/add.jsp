@@ -34,9 +34,9 @@
 
     <button class="btn btn-primary" onclick="createPhone()">Create</button>
 
-    <div class="p-2">Владельцы номера:</div>
+    <div class="p-2" id="tabledesc">Владельцы номера:</div>
 
-    <table class="owners iksweb">
+    <table class="owners iksweb" aria-describedby="tabledesc">
         <tr class="example-owner">
             <th>ФИО</th>
             <th>Почта</th>
