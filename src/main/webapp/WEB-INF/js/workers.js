@@ -1,13 +1,12 @@
-var workerList;
-time = 0;
-var currentId = location.pathname.split("/").filter(element => element).at(-1);
+let workerList;
+let currentId = location.pathname.split("/").filter(element => element).at(-1);
 
 async function putRequest(){
     let number = document.getElementById("number").value
     let isHidden = document.getElementById("isHidden").checked
     let owners = getOwnerIds()
 
-    phone = {
+    let phone = {
         number: number,
         isHidden: isHidden,
         owners: owners

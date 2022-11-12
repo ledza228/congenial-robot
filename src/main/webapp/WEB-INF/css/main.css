@@ -23,9 +23,9 @@ table.iksweb th {
     font-weight: normal;
 }
 
-.dropdown-menu{ display: none; }
+.dropdown-menu{ display: none;
+    margin-top:0; }
 .dropdown:focus-within .dropdown-menu{ display: block; }
-.dropdown-menu{ margin-top:0; }
 .dropdown-menu:hover {display: block;}
 
 .drop-worker{

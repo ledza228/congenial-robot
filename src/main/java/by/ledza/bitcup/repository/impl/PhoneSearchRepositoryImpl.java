@@ -23,8 +23,6 @@ public class PhoneSearchRepositoryImpl implements PhoneSearchRepository {
         CriteriaBuilder criteriaBuilder = entityManager.getCriteriaBuilder();
         CriteriaQuery<Phone> criteria = criteriaBuilder.createQuery(Phone.class);
 
-        Metamodel m = entityManager.getMetamodel();
-
         Root<Phone> phone = criteria.from(Phone.class);
         Fetch<Phone, Worker> workers = phone.fetch("owners");
         Join<Phone, Worker> workersJoin = (Join<Phone, Worker>) workers;
