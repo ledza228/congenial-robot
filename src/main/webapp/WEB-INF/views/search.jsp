@@ -68,11 +68,11 @@
     <table class="iksweb">
         <thead>
         <tr>
-            <td>Номер</td>
-            <td>ФИО</td>
-            <td>Почта</td>
-            <td>Позиция</td>
-            <td>Отдел</td>
+            <th>Номер</th>
+            <th>ФИО</th>
+            <th>Почта</th>
+            <th>Позиция</th>
+            <th>Отдел</th>
         </tr>
         </thead>
         <c:forEach var="phone" items="${phones}" varStatus="status">

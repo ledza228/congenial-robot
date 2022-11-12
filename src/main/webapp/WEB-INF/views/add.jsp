@@ -38,11 +38,11 @@
 
     <table class="owners iksweb">
         <tr class="example-owner">
-            <td>ФИО</td>
-            <td>Почта</td>
-            <td>Должность</td>
-            <td>Отдел</td>
-            <td style="width: 50px">Действие</td>
+            <th>ФИО</th>
+            <th>Почта</th>
+            <th>Должность</th>
+            <th>Отдел</th>
+            <th style="width: 50px">Действие</th>
         </tr>
     </table>
 

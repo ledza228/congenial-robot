@@ -42,12 +42,12 @@
         <table class="iksweb">
             <thead>
             <tr>
-                <td>Номер</td>
-                <td>ФИО</td>
-                <td>Почта</td>
-                <td>Должность</td>
-                <td>Отдел</td>
-                <td>Действие</td>
+                <th>Номер</th>
+                <th>ФИО</th>
+                <th>Почта</td>
+                <th>Должность</th>
+                <th>Отдел</th>
+                <th>Действие</th>
             </tr>
             </thead>
             <c:forEach var="phone" items="${phones}" varStatus="status">
@@ -75,11 +75,11 @@
 
                             <div style="text-align: center">
                                 <a href=${"/admin/phone/".concat(phone.getPhoneId())}>
-                                    <button class="btn btn-success btn-sm rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit"></i></button>
+                                    <button class="btn btn-success btn-sm rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Edit"><em class="fa fa-edit"></em></button>
                                 </a>
 
                                 <button class="btn btn-danger btn-sm rounded-0" type="button" data-toggle="tooltip"
-                                        data-placement="top" title="Delete" onclick="deletePhone(${phone.getPhoneId()})"><i class="fa fa-trash"></i></button>
+                                        data-placement="top" title="Delete" onclick="deletePhone(${phone.getPhoneId()})"><em class="fa fa-trash"></em></button>
                             </div>
 
                         </td>

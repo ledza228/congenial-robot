@@ -20,8 +20,6 @@ table.iksweb td,table.iksweb th {
     height: 35px;
 }
 table.iksweb th {
-    background: #347c99;
-    color: #fff;
     font-weight: normal;
 }
 
@@ -45,6 +43,10 @@ thead {
     font-style: italic;
     font-size: 17px;
     text-align: center;
+}
+
+th {
+    text-align: center !important;
 }
 
 tbody:nth-child(even) {
