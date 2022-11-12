@@ -4,7 +4,6 @@ import by.ledza.bitcup.dto.AddPhoneDTO;
 import by.ledza.bitcup.dto.EditPhoneDTO;
 import by.ledza.bitcup.dto.PhoneDTO;
 import by.ledza.bitcup.dto.SearchDTO;
-import by.ledza.bitcup.model.Phone;
 
 import java.util.List;
 

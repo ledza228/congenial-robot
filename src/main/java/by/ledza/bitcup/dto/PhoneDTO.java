@@ -1,6 +1,5 @@
 package by.ledza.bitcup.dto;
 
-import by.ledza.bitcup.model.Worker;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

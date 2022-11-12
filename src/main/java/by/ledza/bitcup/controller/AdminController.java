@@ -7,7 +7,6 @@ import by.ledza.bitcup.service.PhoneService;
 import by.ledza.bitcup.service.WorkerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.annotation.Secured;
-import org.springframework.security.core.context.SecurityContextImpl;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

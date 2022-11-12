@@ -1,7 +1,6 @@
 package by.ledza.bitcup.model;
 
 
-import by.ledza.bitcup.enums.Role;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

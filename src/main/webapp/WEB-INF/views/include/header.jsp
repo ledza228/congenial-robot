@@ -1,5 +1,6 @@
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -29,7 +30,10 @@
         <span class="navbar navbar-light bg-light">
             <security:authentication property="principal.username" />
         </span>
-        <a href="/logout"><button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button></a>
+        <form action="/logout" method="post" style="margin-top: auto; margin-bottom: auto">
+            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>
+        </form>
     </security:authorize>
 
 
