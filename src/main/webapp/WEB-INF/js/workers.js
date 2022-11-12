@@ -13,7 +13,6 @@ async function putRequest(){
         owners: owners
     }
 
-    console.log(phone)
     await fetch("/api/admin/phone/"+currentId, {
         method: 'PUT',
         body: JSON.stringify(phone),
@@ -144,7 +143,6 @@ async function createPhone(){
         owners: owners
     }
 
-    console.log(phone)
     await fetch("/api/admin/phone/", {
         method: 'POST',
         body: JSON.stringify(phone),

@@ -29,6 +29,7 @@ public class SecurityConfig {
     SecurityFilterChain filterChain(HttpSecurity http) throws Exception{
         return http
                 .userDetailsService(userDetailsService())
+                .csrf().ignoringAntMatchers("/api/**").and()
                 .formLogin().loginPage("/login").and()
                 .headers().frameOptions().disable().and()
                 .build();

@@ -1,11 +1,9 @@
 table, th, td {
     border: 1px solid white;
     border-collapse: collapse;
-    font-family: Lato-Regular;
+    font-family: Lato-Regular, serif;
 }
-th, td {
-    /*background-color: #cbd5d5;*/
-}
+
 
 table.iksweb{
     width: 90%;

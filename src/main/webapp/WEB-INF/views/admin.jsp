@@ -50,6 +50,40 @@
             </thead>
             <c:forEach var="phone" items="${phones}" varStatus="status">
                 <tbody>
+                <c:if test="${phone.getOwners().size() == 0}">
+                    <tr>
+                        <td>
+                            <c:if test="${phone.getIsHidden()}">
+                                <span class="badge badge-primary">private</span>
+                                <br>
+                            </c:if>
+                            <span>
+                                <c:out value="${phone.getNumber()}"></c:out>
+                            </span>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td rowspan="${phone.getOwners().size()}">
+
+                            <div style="text-align: center">
+                                <a href=${"/admin/phone/".concat(phone.getPhoneId())}>
+                                    <button class="btn btn-success btn-sm rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit"></i></button>
+                                </a>
+
+                                <button class="btn btn-danger btn-sm rounded-0" type="button" data-toggle="tooltip"
+                                        data-placement="top" title="Delete" onclick="deletePhone(${phone.getPhoneId()})"><i class="fa fa-trash"></i></button>
+                            </div>
+
+                        </td>
+
+                    </tr>
+                </c:if>
                 <c:forEach var="owner" items="${phone.getOwners()}">
                     <tr>
                         <c:if test="${phone.getOwners().get(0).equals(owner)}">
