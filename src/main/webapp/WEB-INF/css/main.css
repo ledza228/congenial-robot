@@ -1,0 +1,61 @@
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    font-family: Lato-Regular;
+}
+th, td {
+    /*background-color: #cbd5d5;*/
+}
+
+table.iksweb{
+    width: 90%;
+    border-collapse:collapse;
+    border-spacing:0;
+    height: auto;
+}
+table.iksweb,table.iksweb td, table.iksweb th {
+    border: 1px solid #595959;
+}
+table.iksweb td,table.iksweb th {
+    padding: 3px;
+    width: 30px;
+    height: 35px;
+}
+table.iksweb th {
+    background: #347c99;
+    color: #fff;
+    font-weight: normal;
+}
+
+.dropdown-menu{ display: none; }
+.dropdown:focus-within .dropdown-menu{ display: block; }
+.dropdown-menu{ margin-top:0; }
+.dropdown-menu:hover {display: block;}
+
+.drop-worker{
+    display: block;
+}
+
+.dropdown{
+    margin-top: 10px;
+}
+
+
+thead {
+    background-color: #6c7ae0;
+    color: #fff;
+    font-style: italic;
+    font-size: 17px;
+    text-align: center;
+}
+
+tbody:nth-child(even) {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.99);
+}
+
+tbody:nth-child(odd) {
+    text-align: center;
+    background: #ecebeb;
+}
+

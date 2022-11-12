@@ -30,7 +30,9 @@ public class SecurityConfig {
     SecurityFilterChain filterChain(HttpSecurity http) throws Exception{
         return http
                 .userDetailsService(userDetailsService())
-                .formLogin().and()
+                .formLogin().loginPage("/login").and()
+                .csrf().disable()
+                .headers().frameOptions().disable().and()
                 .build();
     }
 

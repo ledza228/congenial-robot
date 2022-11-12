@@ -21,12 +21,7 @@ public class Worker {
 
     private String name;
 
-    @ManyToMany
-    @JoinTable(
-            name = "Workers_Phone",
-            joinColumns = {@JoinColumn(name = "owner_id")},
-            inverseJoinColumns = {@JoinColumn(name = "phone_id")}
-    )
+    @ManyToMany(mappedBy = "owners")
     private List<Phone> phones;
 
     private String email;

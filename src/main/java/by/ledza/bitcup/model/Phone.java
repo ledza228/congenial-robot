@@ -3,6 +3,9 @@ package by.ledza.bitcup.model;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 
 import javax.persistence.*;
 import java.util.List;
@@ -11,16 +14,22 @@ import java.util.List;
 @Setter
 @Getter
 @NoArgsConstructor
+@ToString
 public class Phone {
 
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    Long phoneId;
+    private Long phoneId;
 
     private String number;
 
-    @ManyToMany(mappedBy = "phones")
+    @ManyToMany()
+    @JoinTable(
+            name = "Workers_Phone",
+            joinColumns = {@JoinColumn(name = "phone_id")},
+            inverseJoinColumns = {@JoinColumn(name = "owner_id")}
+    )
     private List<Worker> owners;
 
     private Boolean isHidden;
