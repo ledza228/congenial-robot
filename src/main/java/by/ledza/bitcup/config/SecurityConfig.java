@@ -30,6 +30,7 @@ public class SecurityConfig {
         return http
                 .userDetailsService(userDetailsService())
                 .formLogin().loginPage("/login").and()
+                .exceptionHandling().accessDeniedPage("/denied").and()
                 .headers().frameOptions().disable().and()
                 .build();
     }

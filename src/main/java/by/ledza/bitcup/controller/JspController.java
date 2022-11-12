@@ -54,6 +54,12 @@ public class JspController {
         return "add";
     }
 
+
+    @GetMapping("/denied")
+    public String accessDeniedPage(){
+        return "access_denied";
+    }
+
     @GetMapping("/search")
     public String searchPhones(SearchDTO searchDTO, Principal principal, Model model){
         boolean isAuthorized = principal != null;
