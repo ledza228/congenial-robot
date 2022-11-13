@@ -11,10 +11,6 @@
 
     <style><%@include file="../css/main.css"%></style>
 
-    <script>
-        var currentId = location.pathname.split("/").filter(element => element).at(-1);
-    </script>
-
     <script><%@include file="../js/workers.js"%></script>
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">

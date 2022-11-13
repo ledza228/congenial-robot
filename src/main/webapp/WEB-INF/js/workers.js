@@ -1,5 +1,6 @@
+
 let workerList;
-let currentId = location.pathname.split("/").filter(element => element).at(-1);
+const currentId = location.pathname.split("/").filter(element => element).at(-1);
 
 async function putRequest(){
     let number = document.getElementById("number").value
